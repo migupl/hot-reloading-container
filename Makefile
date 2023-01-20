@@ -20,6 +20,11 @@ else
   UID := $(shell id -u)
 endif
 
+# App folder
+ifndef WD
+	WD := $(shell pwd | sed 's/\s/%20/g')
+endif
+
 # Get podman path or an empty string
 PODMAN := $(shell command -v podman)
 PODMAN_NETWORK := cni-hot-reloading
@@ -59,7 +64,7 @@ start: deps create-network
 	[ -z "$(CONTAINER_IMAGE)" ] && $(CONTAINER_CMD) run \
 		--name $(IMAGE_NAME) \
 		$(PODMAN_ARGS) \
-		-v `pwd`:/usr/src/app \
+		-v $(WD):/usr/src/app \
 		-w /usr/src/app \
 		-p 8000:8080 \
 		-dt node:19-alpine || $(CONTAINER_CMD) restart $(IMAGE_NAME)

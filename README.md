@@ -60,6 +60,21 @@ Using http://localhost:8000/ without a .live-server.json file you get
 
 ![localhost:8000](./image/localhost_8000.webp)
 
+A different working directory can be used by defining it in the container creation as following
+
+```bash
+$ make WD="../any/other/directory" start
+```
+
+This is only required the first time and the following you can use
+
+```bash
+$ make start
+```
+
+Remember to remove the container image when using another directory.
+
+
 Good luck, I hope you enjoy it.
 
 ## License
