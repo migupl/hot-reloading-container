@@ -22,7 +22,7 @@ endif
 
 # Get podman path or an empty string
 PODMAN := $(shell command -v podman)
-PODMAN_NETWORK := cni-scaffold-eth
+PODMAN_NETWORK := cni-hot-reloading
 
 # Get docker path or an empty string
 DOCKER := $(shell command -v docker)
