@@ -53,7 +53,7 @@ $ make clean
 To use this function you need to have either [Podman](https://podman.io/) or [Docker](https://www.docker.com/) installed.
 
 **Makefile is configuring the container** with:
-- `cwd`as working directory
+- Current folder as working directory
 - Redirect the container port 8080 (default port for live-server) to port 8000
 
 Using http://localhost:8000/ without a .live-server.json file you get
