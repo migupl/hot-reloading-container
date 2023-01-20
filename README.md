@@ -10,7 +10,7 @@ If a file ~/.live-server.json exists it will be loaded and used as default optio
 
 An example ~/.live-server.json
 
-```JSON
+```javascript
 var liveServer = require("live-server");
 
 var params = {
