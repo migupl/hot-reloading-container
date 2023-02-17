@@ -1,6 +1,6 @@
 .PHONY = clean start stop shell
 
-IMAGE_NAME := where-picture-taken
+IMAGE_NAME := a-hot-reloading-container
 
 ENVIRONMENT := development
 
