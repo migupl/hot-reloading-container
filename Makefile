@@ -67,7 +67,7 @@ start: deps create-network
 		-v $(WD):/usr/src/app \
 		-w /usr/src/app \
 		-p 8000:8080 \
-		-dt node:19-alpine || $(CONTAINER_CMD) restart $(IMAGE_NAME)
+		-dt node:20-alpine || $(CONTAINER_CMD) restart $(IMAGE_NAME)
 
 	# Install all dependencies
 	$(CONTAINER_CMD) exec -ti $(IMAGE_NAME) ash -c "npm install -g live-server"
