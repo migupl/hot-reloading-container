@@ -74,9 +74,14 @@ $ make start
 
 Remember to remove the container image when using another directory.
 
+## Live Server in VSCode
+
+You can use the great [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)[^1] tool, the original one not this one, in VSCode.
 
 Good luck, I hope you enjoy it.
 
 ## License
 
 [MIT license](http://www.opensource.org/licenses/mit-license.php)
+
+[^1]: [A trick](https://gist.github.com/ihollander/cc5f36c6447d15dea6a16f68d82aacf7) when when used in conjunction with [json-server](https://github.com/typicode/json-server)
